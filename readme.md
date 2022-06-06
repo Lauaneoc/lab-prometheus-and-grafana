@@ -5,6 +5,7 @@
    Antes de começar, certifique-se de ter de ter acesso ao usuário root, pois esses comando que vamos utilizar necessita de permissão.
 
 ## Install Prometheus:
+```
  apt-get update
 
  apt-get install -y curl wget vim
@@ -54,11 +55,12 @@
  systemctl status prometheus
 
  netstat -atunp | grep 9090   
+```
 
 **Para acessar: localhost:9090/**
 
 ## Install NodeExporter:
-
+```
 curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz
 
 tar -xvzf node_exporter-0.15.1.linux-amd64.tar.gz
@@ -72,6 +74,7 @@ chown node_exporter:node_exporter /usr/local/bin/node_exporter
 rm -rf node_exporter-0.15.1.linux-amd64
 
 rm -rf node_exporter-0.15.1.linux-amd64.tar.gz
+```
 
 **Para acessar: localhost:9100/**
 
@@ -83,6 +86,7 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 
 
 ### Install Grafana
+```
 sudo apt-get install -y apt-transport-https
 
 sudo apt-get install -y software-properties-common wget
@@ -94,7 +98,7 @@ echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/a
 sudo apt-get update
 
 sudo apt-get install grafana
-
+```
 **Para acessar: localhost:3000/**
 
 ## About:
