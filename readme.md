@@ -4,7 +4,7 @@
    Prometheus é um toolkit de monitoramento e alerta de sistema Open-Source.
    Antes de começar, certifique-se de ter de ter acesso ao usuário root, pois esses comando que vamos utilizar necessita de permissão.
 
-### Install Prometheus:
+## Install Prometheus:
  apt-get update
 
  apt-get install -y curl wget vim
@@ -77,7 +77,7 @@ rm -rf node_exporter-0.15.1.linux-amd64.tar.gz
 
 
 
-### GRAFANA
+## GRAFANA
 
 Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis ​​legais.
 
